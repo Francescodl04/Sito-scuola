@@ -1,0 +1,43 @@
+/*  Nome: Francesco Di Lena
+    Classe: 4 F
+    Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap*/
+    
+#titoloTesta{
+
+    /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
+    /* Internet Explorer 10 - 11 */
+    background-image: -ms-linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
+    /* Regola standard */
+    background-image: linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
+
+}
+#barraNavigazione{
+
+    /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
+    /* Internet Explorer 10 - 11 */
+    background-image: -ms-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Regola standard */
+    background-image: linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+}
+
+#contenitoriCorpo{
+   
+    background-color:rgb(238, 238, 238) ;
+    color: rgb(12, 109, 173);
+}
+
+#titoliCentrali{
+    color: rgb(12, 109, 173);
+}

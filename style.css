@@ -2,7 +2,7 @@
     Classe: 4 F
     Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap*/
     
-#titoloTesta{
+#intestazionePagina{
 
     /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
     /* Internet Explorer 10 - 11 */
@@ -15,14 +15,21 @@
     background-image: -webkit-linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
     /* Regola standard */
     background-image: linear-gradient(top, #004883 0%, #137c9c 100%, #004883 0%);
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#contenitoreIntestazionePagina{
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 #barraNavigazione{
 
     /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
     /* Internet Explorer 10 - 11 */
     background-image: -ms-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
-    /* Mozilla Firefox */
+    /* Mozilla Firefox*/
     background-image: -moz-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
     /* Opera */
     background-image: -o-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
@@ -31,11 +38,18 @@
     /* Regola standard */
     background-image: linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
 }
-
+#corpo{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 #contenitoriCorpo{
    
     background-color:rgb(238, 238, 238) ;
     color: rgb(12, 109, 173);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #titoliCentrali{

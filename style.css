@@ -1,8 +1,9 @@
 /*  Nome: Francesco Di Lena
     Classe: 4 F
-    Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap*/
+    Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap
+    File CSS locale con le direttive di stile delle pagine HTML*/
     
-#intestazionePagina{
+#intestazioneTerminePagina{
 
     /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
     /* Internet Explorer 10 - 11 */
@@ -58,4 +59,36 @@
 
 #paragrafoSotto{
     font-size: 15px;
+}
+
+#pièPagina{
+
+    /* La compatibilità dello sfondo sfumato viene garantita sulla maggior parte dei browser moderni */
+    /* Internet Explorer 10 - 11 */
+    background-image: -ms-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Mozilla Firefox*/
+    background-image: -moz-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    /* Regola standard */
+    background-image: linear-gradient(bottom left, #7c9dbe 0%, #d3e0e9 100%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#google-maps {
+    position: relative;
+    padding-bottom: 75%; /* Definisco l'aspect ratio */
+    height: 100;
+    overflow: hidden;
+}
+
+#google-maps > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }

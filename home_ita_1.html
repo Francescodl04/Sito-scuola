@@ -1,17 +1,20 @@
 <!--Nome: Francesco Di Lena 
     Classe: 4F            
-    Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap-->
+    Progetto di TPSIT: creazione di un clone del sito della scuola con il framework Twitter Bootstrap 4.6.0
+    Pagina iniziale (home) in italiano con paginazione 1-->
+
 <!doctype html>
 <html lang="it">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- Meta Tag richiesti per l'uso di Bootstrap -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Link all'icona della pagina HTML -->
   <link rel="icon" href="Immagini\favicon .ico">
 
-  <!-- Bootstrap CSS -->
+  <!-- Link al CSS di Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
@@ -22,7 +25,10 @@
 </head>
 
 <body style="background-color: rgb(238, 238, 238) ">
-  <div id="intestazionePagina" class="d-none d-lg-block">
+
+  <!-- Intestazione della pagina con logo della Repubblica Italiana, Certquality e titolo I.I.S. Viola-Marchesini  -->
+
+  <div id="intestazioneTerminePagina" class="d-none d-lg-block">
     <div id="contenitoreIntestazionePagina" class="container-lg">
       <div class="row">
         <div class="col-sm d-none d-lg-block">
@@ -54,6 +60,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Barra di navigazione con logo I.I.S. Viola-Marchesini e collegamenti vari -->
+
   <nav id="barraNavigazione" class="navbar navbar-expand-xl navbar-light">
     <a href="https://www.iisviolamarchesini.edu.it/j2/#page"><img class="d-block d-lg-none" src="Immagini\logo.png"
         width="150px" height="120px"></a>
@@ -242,29 +251,33 @@
         </li>
       </ul>
       <!-- Campo di ricerca -->
-      <form action="https://www.google.com" class="form-inline my-2 my-lg-0">
-        <input id="campoRicerca" name="campoRicerca" class="form-control-sm mr-sm-2" type="search"
-          placeholder="Cerca..." aria-label="Cerca...">
-        <a href="https://www.iisviolamarchesini.edu.it/j2/component/search/?searchword=buongiorn&searchphrase=all&Itemid=101"
-          class="btn-sm btn-outline-success my-2 my-sm-0" role="button" type="submit" aria-pressed="true"><img
-            src="Immagini\cerca.png" width="30px" height="25px"></a>
+      <form action="https://www.iisviolamarchesini.edu.it/j2/component/search/?searchword="
+        class="form-inline my-2 my-lg-0">
+        <input id="campoRicerca" name="searchword" class="form-control-sm mr-sm-2" type="search" placeholder="Cerca..."
+          aria-label="Cerca...">
       </form>
   </nav>
+
+  <!-- Corpo centrale della pagina, con il carosello, le ultime notizie e la barra laterale con collegamenti utili -->
+
   <div id="corpo" class="container-xl">
     <div class="row">
       <div class="col-lg-9">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+        <!-- Carosello con le immagini dei plessi e degli indirizzi di studio -->
+
+        <div id="caroselloPlessiIndirizzi" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="0" class="active"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="1"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="2"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="3"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="4"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="5"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="6"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="7"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="8"></li>
+            <li data-target="#caroselloPlessiIndirizzi" data-slide-to="9"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -345,17 +358,20 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#caroselloPlessiIndirizzi" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Precedente</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#caroselloPlessiIndirizzi" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Prossimo</span>
           </a>
         </div>
         <br>
         <br>
+
+        <!-- Sezione del corpo centrale con le ultime notizie con collegamento alle risorse per la didattica digitale integrata-->
+
         <div id="contenitoriCorpo" class="col-sm">
           <p style="color: rgb(12, 109, 173); font-size: 20px;"> <b>Risorse per Didattica Digitale Integrata</b></p>
           <a href="https://www.iisviolamarchesini.edu.it/j2/docenti/didattica-a-distanza">
@@ -448,7 +464,10 @@
             2021-2022 </a>
         </p>
         <br>
-        <nav aria-label="Page navigation example">
+
+        <!-- Paginazione delle notizie in modo da poter vedere anche le notizie più vecchie -->
+
+        <nav aria-label="paginazione">
           <ul class="pagination justify-content-center">
             <li class="page-item disabled">
               <a class="page-link" href="#" tabindex="-1" aria-disabled="true" aria-label="Pagina Precedente"> <span
@@ -465,6 +484,9 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Parte laterale del corpo centrale con i collegamenti utili -->
+
       <div class="col-sm" align="center">
         <div id="contenitoriCorpo" class="col-sm">
           <h5 id="titoliCentrali">PON 2014-2020</h5>
@@ -524,30 +546,56 @@
     </div>
     <br>
   </div>
-  <div id="titoloTesta" class="container-fluid">
-    <br>
-    <div class="container-md" style="background-color: white;">
-      <div class="row">
-        <div class="col" style="text-align: center; font-size: 11px;">
-          IIS VIOLA-MARCHESINI Via A. De Gasperi, 21 Rovigo - Centralino Tel. 0425/410699 Fax 0425/35277 <br>
-          Email: <a href="mailto:rois012001@istruzione.it">rois012001@istruzione.it</a> Posta Elettronica Certificata <a
-            href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a> <br>
-          <a href="https://form.agid.gov.it/view/2790518a-35ea-434e-ac77-170578809f63/"> Dichiarazione di accessibilità
-          </a>
-          <br><br>
-          <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Torna su...</a>
+
+  <!-- Parte inferiore della pagina con le informazioni di contatto dell'I.I.S. Viola-Marchesini -->
+
+  <div id="pièPagina" class="container-fluid">
+    <div class="row" align="center">
+      <div class="col-sm">
+        <img src="Immagini\logo.png" width="150px" height="120px">
+      </div>
+      <div class="col-sm">
+        <h5>I.I.S. Viola-Marchesini</h5>
+        <p>
+          Indirizzo: Via Alcide De Gasperi 21, Rovigo (45100)<br>
+          Telefono centralino: <a href="tel:0425 410699">0425 410699</a>
+          Fax: <a href="fax:0425 35277">0425 35277</a><br>
+          Email: <a href="mailto:rois012001@istruzione.it">rois012001@istruzione.it</a>
+          PEC: <a href="mailto:rois012001@pec.istruzione.it">rois012001@pec.istruzione.it</a><br>
+          Codice Meccanografico: ROIS012001 Codice Fiscale 80006050290
+        </p>
+        <a class="btn btn-primary" href="https://form.agid.gov.it/view/2790518a-35ea-434e-ac77-170578809f63/"
+          role="button">Dichiarazione di accessibilità</a>
+        <a class="btn btn-primary" href="https://www.iubenda.com/privacy-policy/13286193" role="button">Privacy
+          Policy</a>
+        <a class="btn btn-primary" href="https://www.iubenda.com/privacy-policy/13286193/cookie-policy"
+          role="button">Cookie Policy</a>
+        <a class="btn btn-primary" href="#" role="button">Torna su</a>
+      </div>
+      <div class="col-sm">
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.208896723236!2d11.794339015757462!3d45.0815568669144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477efa0be28ee4c1%3A0xecf32eb2f6aaa7c7!2sI.T.I.S.%20Ferruccio%20Viola!5e0!3m2!1sit!2sit!4v1630749156600!5m2!1sit!2sit"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
-    <br>
+  </div>
+  <div id="intestazioneTerminePagina">
+    <p style="text-align: center; color: white;">© Copyright 2021 - I.I.S. Viola-Marchesini <br>
+      Pagina realizzata da Francesco Di Lena, classe 4ª F, A.S. 2021-2022.<br>
+      Clicca <a href="https://github.com/Francescodl04/Sito-scuola" style="color: red;">qui</a> per vedere la repository
+      di GitHub.
+    </p>
   </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Banner (modal) che viene mostrato all'apertura della pagina -->
+  <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Benvenuto nel sito ufficiale <br> dell'I.I.S. Viola-Marchesini!
+          <h5 class="modal-title" id="exampleModalLabel">Benvenuto nel sito ufficiale <br> dell'I.I.S.
+            Viola-Marchesini!
           </h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -556,9 +604,8 @@
         <div class="modal-body">
           Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed
           utili alle finalità illustrate nella cookie policy. Se vuoi saperne di più o negare il consenso a tutti o ad
-          alcuni cookie, consulta la cookie policy.
-          Chiudendo questo banner, scorrendo questa pagina, cliccando su un link o proseguendo la navigazione in altra
-          maniera, acconsenti all’uso dei cookie.
+          alcuni cookie, consulta la <a href="https://www.iubenda.com/privacy-policy/13286193/cookie-policy"> cookie policy</a>.
+          Chiudendo questo banner acconsenti all’uso dei cookie.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Accetta e chiudi</button>
@@ -566,6 +613,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Link per ottenere-->
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -576,11 +626,11 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
 
+  <!-- Contenuto di codice eseguibile per permettere l'apertura del banner (modal) all'avvio della pagina -->
+  
   <script type="text/javascript">
     $(document).ready(function () {
-
-      $('#myModal').modal('show');
-
+      $('#cookieModal').modal('show');
     });
   </script>
 

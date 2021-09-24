@@ -39,11 +39,11 @@
         </div>
         <div class="col-lg- d-none d-lg-block">
           <p
-            style="text-align: center; font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px; letter-spacing: 2px; line-height: 20px; font-weight: 500; color: #808080;">
+            style="font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 20px; letter-spacing: 2px; line-height: 20px; font-weight: 500; color: #808080;">
             ISTITUTO DI ISTRUZIONE SUPERIORE <br>
           </p>
           <p
-            style="text-align: center; font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 28px; letter-spacing: 1px; line-height: 28px; font-weight: 500;">
+            style="font-family: Lucida 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 28px; letter-spacing: 1px; line-height: 28px; font-weight: 500;">
             I.I.S. VIOLA-MARCHESINI <br>
           </p>
           <p style="font-size: 13px; color: #808080;">
@@ -245,7 +245,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link e" href="#">
+          <a class="nav-link e" href="home_eng.html">
             <img src="Immagini\uk__flag.png"> </img>
           </a>
         </li>
@@ -512,7 +512,7 @@
 
       <!-- Parte laterale del corpo centrale con i collegamenti utili -->
 
-      <div class="col-sm" align="center">
+      <div class="col-sm" style="text-align: center;">
         <div id="contenitoriCorpo" class="col-sm">
           <h5 id="titoliCentrali">PON 2014-2020</h5>
           <a
@@ -575,7 +575,7 @@
   <!-- Parte inferiore della pagina con le informazioni di contatto dell'I.I.S. Viola-Marchesini -->
 
   <div id="pièPagina" class="container-fluid">
-    <div class="row" align="center">
+    <div class="row">
       <div class="col-sm">
         <img src="Immagini\logo.png" width="150px" height="120px">
       </div>
@@ -607,7 +607,7 @@
     </div>
   </div>
   <div id="intestazioneTerminePagina">
-    <p style="text-align: center; color: white;">© Copyright 2021 - I.I.S. Viola-Marchesini <br>
+    <p style="color: white;">© Copyright 2021 - I.I.S. Viola-Marchesini <br>
       Pagina realizzata da Francesco Di Lena, classe 4ª F, A.S. 2021-2022.<br>
       Clicca <a href="https://github.com/Francescodl04/Sito-scuola" style="color: red;">qui</a> per vedere la repository
       di GitHub.
@@ -640,7 +640,7 @@
     </div>
   </div>
 
-  <!-- Link per ottenere-->
+  <!-- Link per ottenere le librerie di JQuery-->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -655,7 +655,9 @@
   <!-- Contenuto di codice eseguibile per permettere l'apertura del banner (modal) all'avvio della pagina -->
 
   <!--<script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready( /*Esegue il codice della pagina solamente quando è pronta per farlo. Il carattere $ è uno dei selettori in JQuery, che permette di selezionare gli elementi che hanno 
+                      l'attributo specificato con un valore che termina esattamente con una determinata stringa.*/
+      function () {
       $('#cookieModal').modal('show');
     });
   </script>-->
